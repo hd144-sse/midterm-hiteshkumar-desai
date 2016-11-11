@@ -1,0 +1,457 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+https://color.adobe.com/Dear-Lorem-Ipsum-color-theme-1104108/
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    color: #2A3033;
+    line-height: 1.6;
+    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+    background-color: #377F65;
+}
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+    text-align: left;
+}
+h2{
+	margin-top:10px;
+    font: bold 1.618rem 'Droid Serif', 'more font stack stuff', serif;
+    text-align: left;    
+}
+li, p, a{
+	color: whitesmoke;
+    padding: 5px;
+    font: 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+	list-style-type: none;
+}
+a{
+	color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+p{
+	margin-top: 10px;
+	line-height: 1.6;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 100%;
+    background-color:#377F65;
+}
+.box {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    background-image: url(../image/mobile/header_placeimg_553_158_nature.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+ul#footer {
+    margin:0 ;
+}
+header h1{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.mainnav{
+
+}
+nav{
+    width: 100%;
+	margin-top: 18px;
+    
+}
+nav>ul{
+    width: 100%;
+    border:2px solid black;   
+}
+nav li{
+	margin-top: 5px;
+    width: 100%;
+    list-style: none;
+    border: none;
+	
+}
+nav a,
+nav a:link,
+nav a:visited{
+	background-color: #7CBF78;
+	text-decoration: none;
+    display: block;
+    font: bold 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+	
+}
+ a:active,
+ a:focus,
+ a:hover{
+ color:red;   
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+	float: left;
+	margin:0 10px 0 0;
+}
+footer{
+    width: 100%;
+	background-color: #377F3E;
+}
+
+/*FIRST BREAK POINT - TABLET VIEW */
+@media screen and (min-width:600px){
+/*  
+Set the prescribed widths:
+wrapper - 100%
+header - 100%
+nav - 90%
+links - 20% of nav
+main - 90%
+columns - 50% of main
+column image - 60% of column
+footer - 90%
+*/
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+}
+h2{
+    font: bold 1.618rem 'Droid Serif', 'more font stack stuff', serif;
+}
+li, p{
+    font: 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+	padding: 0px;
+	line-height: 1.6;
+}
+a{
+    font: bold 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 100%;
+	background-color:#377F65;
+    margin: 0 auto;
+}
+header{
+    width: 100%;	
+}
+nav{
+    width: 90%;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 20%;
+    list-style: none;
+	display: inline-block;
+    border: none;	
+	float: left;
+}
+nav a,
+nav a:link,
+nav a:visited{
+	
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+main{
+    width: 90%;
+}
+.col{
+    float: left;
+    width: 50%;
+	padding: 0px 5px;
+}
+.col img{
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+	
+}
+footer{
+    width: 100%;
+    float:right;
+	padding: 10px 0;
+	margin: 15px 0px;
+}
+    
+    
+    
+}
+
+/*SECOND BREAK POINT - DESKTOP VIEW */
+@media screen and (min-width: 800px){
+/*
+Set the prescribed widths:
+header - 100%
+nav - 90%
+links - 20% of nav
+main - 90%
+columns - 50% of main
+column image - 50% of column
+footer - 100%
+*/
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+}
+h2{
+    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+}
+li, p{
+    font: 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+	padding: 0px;
+	line-height: 1.6;
+}
+a{
+    font: bold 1.0rem 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 100%;
+	background-color:#377F65;
+    margin: 0 auto;
+}
+header{
+    width: 100%;	
+}
+nav{
+    width: 90%;
+	margin: 10px;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 20%;
+    list-style: none;
+	display: inline-block;
+    border: none;	
+	float: left;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: left;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+main{
+    width: 90%;
+}
+.col{
+    float: left;
+    width: 50%;
+}
+.col img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+	margin: 10px 20px 0 0;
+}
+footer{
+    width: 100%;
+    float:right;
+	margin: 20px 0px;
+}    
+}
+
+/*THIRD BREAK POINT - LARGE DESKTOP VIEW */
+@media screen and (min-width: 1200px){
+/*
+Set the prescribed widths:
+header - 100%
+nav - 30%
+links - 100% of nav
+main - 70%
+columns - 50% of main
+column image - 55% of column width
+footer - 100%
+*/    
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+    text-align: left;
+}
+/*h1{
+    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+}*/
+h2{
+	margin-top:10px;
+    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+    text-align: left;
+    
+}
+li, p, a{
+	color: whitesmoke;
+    padding: 5px;
+    font: 1.628rem 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+a{
+	color: black;
+    text-decoration: none;
+    font-weight: bold;
+	margin: 0 -25px;
+}
+
+p{
+	margin-top: 0px;
+	line-height: 1.6;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 100%;
+    background-color:#377F65;
+}
+.box {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    background-image: url(../image/mobile/header_placeimg_553_158_nature.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+ul#footer {
+    margin-left: 25px;
+}
+header h1{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+nav{
+    width: 30%;
+	margin-top: 18px;
+    
+}
+nav>ul{
+    width: 100%;
+    border:2px solid black;
+    
+}
+nav li{
+	margin-top: 5px;
+    width: 100%;
+    list-style: none;
+    border: none;
+	
+}
+nav a,
+nav a:link,
+nav a:visited{
+	background-color: #7CBF78;
+	text-decoration: none;
+    display: block;
+	margin: 0 25px;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: left;
+	
+}
+ a:active,
+ a:focus,
+ a:hover{
+ color:red;   
+}
+main{
+    width: 70%;
+}
+.col{
+	margin: -230px 0px 0px 5px;
+    float: left;
+    width: 35%;
+}
+.col img{
+    width: 55%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+	float: left;
+	margin:14px 10px 0px 0;
+}
+footer{
+    width: 100%;
+	background-color: #377F3E;
+	padding: 0px 15px 0 -1px;
+	margin: 0px;
+}
+}
